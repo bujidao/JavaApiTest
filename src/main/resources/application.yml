@@ -1,0 +1,13 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.1.138:3306/triage_call_system_main?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai
+    username: root
+    password: leenleda2020
+
+mybatis:
+  mapperLocations: classpath*:mybatis/mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
