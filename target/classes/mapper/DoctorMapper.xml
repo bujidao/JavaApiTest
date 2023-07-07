@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.apitest.mapper.DoctorMapper">
+
+    <resultMap id="BaseResultMap" type="com.example.apitest.domain.Doctor">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="loginId" column="login_id" jdbcType="VARCHAR"/>
+            <result property="dbSourceId" column="db_source_id" jdbcType="INTEGER"/>
+            <result property="doctorName" column="doctor_name" jdbcType="VARCHAR"/>
+            <result property="department" column="department" jdbcType="VARCHAR"/>
+            <result property="professionalTitle" column="professional_title" jdbcType="VARCHAR"/>
+            <result property="description" column="description" jdbcType="VARCHAR"/>
+            <result property="flagDelete" column="flag_delete" jdbcType="BIT"/>
+            <result property="dataType" column="data_type" jdbcType="INTEGER"/>
+            <result property="flagShow" column="flag_show" jdbcType="BIT"/>
+            <result property="doctorImgUrl" column="doctor_img_url" jdbcType="VARCHAR"/>
+            <result property="other" column="other" jdbcType="VARCHAR"/>
+            <result property="lastUpdateTime" column="last_update_time" jdbcType="TIMESTAMP"/>
+            <result property="hotKey" column="hot_key" jdbcType="VARCHAR"/>
+            <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,login_id,db_source_id,
+        doctor_name,department,professional_title,
+        description,flag_delete,data_type,
+        flag_show,doctor_img_url,other,
+        last_update_time,hot_key,create_time
+    </sql>
+</mapper>

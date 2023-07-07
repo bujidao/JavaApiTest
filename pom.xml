@@ -33,6 +33,7 @@
             <scope>test</scope>
         </dependency>
         <dependency>
+
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus</artifactId>
             <version>3.4.1</version>
